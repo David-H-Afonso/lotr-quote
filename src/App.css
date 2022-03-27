@@ -1,38 +1,46 @@
-.App {
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/specialelite/v16/XLYgIZbkc4JPUL5CVArUVL0ntnAOTQ.ttf) format('truetype');
+}
+
+body{
+  font-family: 'Special Elite';
+}
+
+#divCita {
+  font-size: 1.2em;
+}
+
+#main{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#quote{
+  position: absolute;
+  min-width: 320px;
+  max-width: 700px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#quote blockquote{
+  font-size: 2em;
+  line-height: 1.1em;
+  letter-spacing: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#quote ul {
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#quote ul li{
+  letter-spacing: 1px;
 }
